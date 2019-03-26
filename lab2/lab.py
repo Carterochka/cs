@@ -75,7 +75,7 @@ def divide(dividend, divisor):
             lsb = '1'
         else:
             print('Divisor is greater then dividend')
-            print('Just shift register to left\n')
+            print('The last quotient bit is set to 0\n')
             lsb = '0'
         bin_register = bin_register[:32] + shift_left(bin_register[32:])
         bin_register = bin_register[:63] + lsb
